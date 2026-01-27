@@ -68,7 +68,7 @@ export function NewsPage() {
   const regularArticles = newsArticles.filter((article) => !article.featured);
 
   return (
-    <div className="py-20">
+    <div className="py-20" id="main">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
 
 export function NotFound() {
@@ -14,9 +14,11 @@ export function NotFound() {
         </p>
         <Link
           to="/"
+          onClick={() => window.scrollTo(0, 0)}
           className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
         >
-          <Home className="w-5 h-5" />
+          <Home className="w-5 h-5"
+          />
           Back to Home
         </Link>
       </div>

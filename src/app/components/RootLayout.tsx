@@ -1,7 +1,8 @@
-import { Link, Outlet, useLocation } from "react-router";
+import { Link, Outlet, useLocation } from "react-router-dom";
+
 import { Code2, Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/SERAGIT.png";
 export function RootLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -28,15 +29,21 @@ export function RootLayout() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="SeraGit logo" className="w-30 h-25" />
-              {/* <span className="text-xl font-bold text-slate-900">SeraGit</span> */}
+            <Link to="/" className="flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
+              <img src={logo} alt="SeraGit logo" className="w-50 h-16 " />
+              {/* <span className="text-xl font-bold text-[#32c2d4] mb-3"
+
+>SeraGit</span> */}
             </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
+          
+                  
+                    onClick={() => window.scrollTo(0, 0)}
+                  
                   key={link.path}
                   to={link.path}
                   className={`text-sm font-medium transition-colors ${
@@ -48,9 +55,14 @@ export function RootLayout() {
                   {link.label}
                 </Link>
               ))}
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                Get Started
-              </button>
+              
+             <Link
+  to="/services#contact"
+  className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+>
+  Contact Us
+</Link>
+
             </div>
 
             {/* Mobile Menu Button */}
@@ -105,7 +117,7 @@ export function RootLayout() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <img src={logo} alt="SeraGit logo" className="w-20 h-20" />
-                <span className="text-lg font-bold">SeraGit</span>
+                <span className="text-lg font-bold text-[#32c2d4] mb-3">SeraGit</span>
               </div>
               <p className="text-slate-400 text-sm">
                 Building innovative software solutions for tomorrow's
@@ -118,6 +130,7 @@ export function RootLayout() {
                 <li>
                   <Link
                     to="/about"
+                    onClick={() => window.scrollTo(0, 0)}
                     className="hover:text-white transition-colors"
                   >
                     About Us
@@ -126,6 +139,7 @@ export function RootLayout() {
                 <li>
                   <Link
                     to="/services"
+                    onClick={() => window.scrollTo(0, 0)}
                     className="hover:text-white transition-colors"
                   >
                     Services
@@ -134,6 +148,7 @@ export function RootLayout() {
                 <li>
                   <Link
                     to="/projects"
+                    onClick={() => window.scrollTo(0, 0)}
                     className="hover:text-white transition-colors"
                   >
                     Projects
@@ -147,6 +162,7 @@ export function RootLayout() {
                 <li>
                   <Link
                     to="/news"
+                    onClick={() => window.scrollTo(0, 0)}
                     className="hover:text-white transition-colors"
                   >
                     News
@@ -170,7 +186,7 @@ export function RootLayout() {
                 <li>info@seragit.com</li>
                 <li>057 2288844-01555720405</li>
                 <li>Damietta - Nafie St next to Al Mazloum Mosque</li>
-                <li>Cairo - Naser city</li>
+                <li>Cairo - nasr city-3-ismail elkabany</li>
               </ul>
             </div>
           </div>

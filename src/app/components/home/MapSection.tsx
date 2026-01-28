@@ -36,7 +36,7 @@ export function MapSection() {
                 <div className="space-y-3 text-sm text-slate-700 border-t border-slate-100 pt-4 mb-6">
                 <p className="flex items-start gap-3">
                     <span className="text-lg">📍</span> 
-                    <span>Cairo, Naser city</span>
+                    <span>Cairo - nasr city-3-ismail elkabany</span>
                 </p>
                 <p className="flex items-center gap-3">
                     <span className="text-lg">📞</span> 

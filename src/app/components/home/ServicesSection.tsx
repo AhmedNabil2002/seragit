@@ -1,6 +1,5 @@
-
 import { motion } from "framer-motion";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { Code2, Smartphone, Cpu, Cloud, Wrench, Shield } from "lucide-react";
 
 export function ServicesSection() {
@@ -60,13 +59,13 @@ export function ServicesSection() {
     <section className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold tracking-wider text-sm uppercase mb-2 block">What We Do</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
             Our Services
           </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            At SeraGit, we provide a comprehensive range of IT services
-            designed to enhance operations, optimize performance, and drive sustainable growth.
+            At SeraGit, we provide a comprehensive range of IT services designed
+            to enhance operations, optimize performance, and drive sustainable
+            growth.
           </p>
         </div>
 
@@ -99,9 +98,10 @@ export function ServicesSection() {
 
         <div className="flex justify-center mt-16">
           <Link
-            to="/services"
-            className="group"
-          >
+  to="/services"
+  onClick={() => window.scrollTo(0, 0)}
+>
+
             <button className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30">
               View All Services
             </button>

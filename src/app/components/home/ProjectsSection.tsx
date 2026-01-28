@@ -1,7 +1,7 @@
-
 import { motion } from "framer-motion";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { ContactSection } from "./contactUsSection";
 
 export function ProjectsSection() {
   const containerVariants = {
@@ -22,21 +22,24 @@ export function ProjectsSection() {
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
       title: "Asset Management Solution",
-      description: "Comprehensive asset tracking system for enterprise-scale logistics.",
+      description:
+        "Comprehensive asset tracking system for enterprise-scale logistics.",
       tag: "Enterprise",
     },
     {
       image:
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
       title: "Data Analytics Platform",
-      description: "Real-time business intelligence dashboard with predictive modeling.",
+      description:
+        "Real-time business intelligence dashboard with predictive modeling.",
       tag: "Analytics",
     },
     {
       image:
         "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop",
       title: "Industrial IoT System",
-      description: "Smart monitoring and control solution for manufacturing plants.",
+      description:
+        "Smart monitoring and control solution for manufacturing plants.",
       tag: "IoT",
     },
   ];
@@ -46,7 +49,6 @@ export function ProjectsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="max-w-2xl">
-            <span className="text-blue-600 font-semibold tracking-wider text-sm uppercase mb-2 block">Our Portfolio</span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Featured Projects
             </h2>
@@ -56,8 +58,9 @@ export function ProjectsSection() {
             </p>
           </div>
           <Link
-             to="/projects"
-             className="hidden md:flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all"
+            onClick={() => window.scrollTo(0, 0)}
+            to="/projects"
+            className="hidden md:flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all"
           >
             View All Projects <ArrowRight className="w-5 h-5" />
           </Link>
@@ -82,9 +85,11 @@ export function ProjectsSection() {
                 style={{ backgroundImage: `url(${project.image})` }}
               >
                 <div className="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/60 transition-colors duration-300 flex items-center justify-center">
-                   <span className="opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 text-white font-bold border-2 border-white px-6 py-2 rounded-full">
-                     View Case Study
-                   </span>
+                  <Link to="/projects" onClick={() => window.scrollTo(0, 0)}>
+                    <span className="opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 text-white font-bold border-2 border-white px-6 py-2 rounded-full">
+                      View Case Study
+                    </span>
+                  </Link>
                 </div>
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-blue-900 uppercase tracking-wide">
                   {project.tag}
@@ -98,7 +103,7 @@ export function ProjectsSection() {
                   {project.description}
                 </p>
                 <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
-                   <div className="w-0 h-full bg-blue-600 group-hover:w-full transition-all duration-700 ease-out"></div>
+                  <div className="w-0 h-full bg-blue-600 group-hover:w-full transition-all duration-700 ease-out"></div>
                 </div>
               </div>
             </M.div>

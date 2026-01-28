@@ -4,7 +4,6 @@ export function ContactSection() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-            <span className="text-blue-600 font-semibold tracking-wider text-sm uppercase mb-2 block">Get In Touch</span>
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">
             Ready to Start a Project?
           </h2>
@@ -22,7 +21,7 @@ export function ContactSection() {
               </label>
               <input
                 type="text"
-                placeholder="John Doe"
+                placeholder="Ahmed"
                 className="w-full px-5 py-4 rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
               />
             </div>
@@ -32,7 +31,7 @@ export function ContactSection() {
               </label>
               <input
                 type="email"
-                placeholder="john@example.com"
+                placeholder="Ahmed@example.com"
                 className="w-full px-5 py-4 rounded-xl border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
               />
             </div>

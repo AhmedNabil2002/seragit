@@ -3,55 +3,32 @@ import { motion } from "framer-motion";
 
 export function AboutPage() {
   const tools = [
-    {
-      name: "Python",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-    },
-    {
-      name: "React",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    },
-    {
-      name: "Node.js",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    },
-    {
-      name: "JavaScript",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    },
-    {
-      name: "PostgreSQL",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    },
-    {
-      name: "MySQL",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-    },
-    {
-      name: "Git",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-    },
-    {
-      name: "Docker",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-    },
-    {
-      name: "MongoDB",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    },
-    {
-      name: "HTML5",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    },
-    {
-      name: "CSS3",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    },
-    {
-      name: "TypeScript",
-      logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    },
-  ];
+  { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "TypeScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Vue.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+
+  // Backend & Enterprise
+  { name: "PHP", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+  { name: "Laravel", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
+  { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: ".NET", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" },
+  { name: "C#", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" },
+
+  // Databases
+  { name: "SQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+
+  // DevOps
+  { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+];
+
 
   const values = [
     {
@@ -126,39 +103,67 @@ export function AboutPage() {
   const M = motion as unknown as any;
 
   return (
-    <div className="bg-gray-50">
-      {/* Hero Section */}
-      <M.section
-        className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20"
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.15 }}
-        variants={{
-          hidden: {},
-          show: { transition: { staggerChildren: 0.08 } },
-        }}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <M.h1
-            variants={{
-              hidden: { opacity: 0, y: 12 },
-              show: { opacity: 1, y: 0 },
-            }}
-            className="text-4xl lg:text-5xl font-bold mb-4"
-          >
-            About SeraGit
-          </M.h1>
-          <M.p
-            variants={{
-              hidden: { opacity: 0, y: 8 },
-              show: { opacity: 1, y: 0 },
-            }}
-            className="text-xl text-blue-100 max-w-3xl mx-auto"
-          >
-            I Help You develop software solution for your business
-          </M.p>
-        </div>
-      </M.section>
+    // <div className="bg-gray-50">
+    //   {/* Hero Section */}
+    //   <M.section
+    //     className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20"
+    //     initial="hidden"
+    //     whileInView="show"
+    //     viewport={{ once: true, amount: 0.15 }}
+    //     variants={{
+    //       hidden: {},
+    //       show: { transition: { staggerChildren: 0.08 } },
+    //     }}
+    //   >
+    //     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    //       <M.h1
+    //         variants={{
+    //           hidden: { opacity: 0, y: 12 },
+    //           show: { opacity: 1, y: 0 },
+    //         }}
+    //         className="text-4xl lg:text-5xl font-bold mb-4"
+    //       >
+    //         About SeraGit
+    //       </M.h1>
+    //       <M.p
+    //         variants={{
+    //           hidden: { opacity: 0, y: 8 },
+    //           show: { opacity: 1, y: 0 },
+    //         }}
+    //         className="text-xl text-blue-100 max-w-3xl mx-auto"
+    //       >
+    //         I Help You develop software solution for your business
+    //       </M.p>
+    //     </div>
+    //   </M.section>
+
+      <div className="py-2" id="main">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+      {/* Hero Header */}
+<div className="relative py-32 mb-20 overflow-hidden text-white rounded-2xl">
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{
+      backgroundImage:
+        "url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop)",
+    }}
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-800/75 to-blue-950/95" />
+
+  {/* Content */}
+  <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+    About SeraGit
+    </h1>
+    <p className="text-blue-200 text-lg md:text-xl max-w-3xl mx-auto">
+      I Help You develop software solution for your business
+    </p>
+  </div>
+</div>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -361,29 +366,32 @@ export function AboutPage() {
             Technology and tools used in SeraGit projects
           </h2>
           <M.div
-            className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center"
-            variants={aboutContainerVariants}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.12 }}
-          >
-            {tools.map((tool, index) => (
-              <M.div
-                key={index}
-                variants={aboutItemVariants}
-                whileHover={{ scale: 1.12 }}
-                transition={{ type: "spring", stiffness: 200 }}
-                className="w-16 h-16 hover:scale-110 transition-transform duration-300"
-                title={tool.name}
-              >
-                <img
-                  src={tool.logo}
-                  alt={tool.name}
-                  className="w-full h-full object-contain"
-                />
-              </M.div>
-            ))}
-          </M.div>
+    className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-8"
+    variants={aboutContainerVariants}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.12 }}
+  >
+    {tools.map((tool, index) => (
+      <M.div
+        key={index}
+        variants={aboutItemVariants}
+        whileHover={{ y: -6, scale: 1.08 }}
+        transition={{ type: "spring", stiffness: 180 }}
+        className="flex flex-col items-center justify-center bg-gray-50 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all group"
+      >
+        <img
+          src={tool.logo}
+          alt={tool.name}
+          className="w-14 h-14 object-contain  group-hover:grayscale-0 transition-all duration-300"
+        />
+        <span className="mt-3 text-sm font-medium  group-hover:text-slate-900">
+          {tool.name}
+        </span>
+      </M.div>
+    ))}
+  </M.div>
+
         </div>
 
         {/* FAQ Section */}
@@ -427,6 +435,7 @@ export function AboutPage() {
           </M.div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

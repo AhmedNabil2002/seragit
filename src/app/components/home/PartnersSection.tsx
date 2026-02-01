@@ -116,32 +116,30 @@ export function PartnersSection() {
         {/* Logos Carousel */}
         <div className="relative">
           <div className="overflow-hidden py-2">
-            <M.div
-              className="flex items-center gap-2"
-              animate={{ x: [0, -140 * partners.length] }}
-              transition={{
-                x: {
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  duration: 40,
-                  ease: "linear",
-                },
-              }}
-            >
-              {duplicatedPartners.map((partner, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-center min-w-[260px] h-[170px]"
-                >
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-              ))}
-            </M.div>
-          </div>
+  <M.div
+    className="flex w-max gap-6"
+    animate={{ x: ["0%", "-50%"] }}
+    transition={{
+      duration: 40,
+      ease: "linear",
+      repeat: Infinity,
+    }}
+  >
+    {[...partners, ...partners].map((partner, index) => (
+      <div
+        key={index}
+        className="flex items-center justify-center w-[260px] h-[170px] shrink-0"
+      >
+        <img
+          src={partner.logo}
+          alt={partner.name}
+          className="w-full h-full object-contain"
+        />
+      </div>
+    ))}
+  </M.div>
+</div>
+
         </div>
 
         {/* CTA */}

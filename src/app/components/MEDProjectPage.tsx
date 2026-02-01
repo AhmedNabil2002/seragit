@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo1 from "@/assets/images/image4.2.png";
-import main from "@/assets/images/project1.png";
+import main from "@/assets/images/Project1.png";
 import detailsone from "@/assets/images/ProjectDetailesImg.png";
 import detailstwo from "@/assets/images/ProjectDetailesBg.png";
 import { motion, useReducedMotion } from "framer-motion";
@@ -116,7 +116,10 @@ export function MEDProjectPage() {
                 </span>
               </div>
 
-              <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6" id="med">
+              <h1
+                className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6"
+                id="med"
+              >
                 MED - Mechanical And Electrical Department
               </h1>
 
@@ -158,28 +161,31 @@ export function MEDProjectPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-8">
             Project Overview
           </h2>
-          
+
           {/* Project Details Grid */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="prose max-w-none text-slate-600">
               <p className="text-lg mb-6">
                 The MED (Mechanical and Electrical Department) system is a
                 comprehensive web-based management platform developed for the
-                Ministry of Water Resources and Irrigation in Egypt. This sophisticated 
-                system streamlines the operations and management of mechanical and 
-                electrical infrastructure across various water resource facilities.
+                Ministry of Water Resources and Irrigation in Egypt. This
+                sophisticated system streamlines the operations and management
+                of mechanical and electrical infrastructure across various water
+                resource facilities.
               </p>
               <p className="text-lg mb-6">
-                The platform provides a centralized solution for tracking assets,
-                managing maintenance schedules, monitoring equipment performance,
-                and facilitating collaboration between different departments
-                within the ministry.
+                The platform provides a centralized solution for tracking
+                assets, managing maintenance schedules, monitoring equipment
+                performance, and facilitating collaboration between different
+                departments within the ministry.
               </p>
             </div>
 
             {/* Project Info Card */}
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-6">Project Details</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-6">
+                Project Details
+              </h3>
               <div className="space-y-4">
                 {projectDetails.map((detail, index) => (
                   <div key={index} className="flex flex-col">
@@ -262,16 +268,18 @@ export function MEDProjectPage() {
               </h2>
               <div className="prose max-w-none text-slate-600">
                 <p className="text-lg mb-4">
-                  The Department Of Mechanical And Electrical Maintenance At One Of 
-                  Egypt's Oldest Government Entities, Operating From The Early 1950s. 
-                  The Entity Manages Experienced By Mechanical & Electrical Experts 
-                  Responsible For Maintaining And Repairing All Pumping Stations, 
-                  Drainage Stations, And Irrigation Channels Across The Republic.
+                  The Department Of Mechanical And Electrical Maintenance At One
+                  Of Egypt's Oldest Government Entities, Operating From The
+                  Early 1950s. The Entity Manages Experienced By Mechanical &
+                  Electrical Experts Responsible For Maintaining And Repairing
+                  All Pumping Stations, Drainage Stations, And Irrigation
+                  Channels Across The Republic.
                 </p>
                 <p className="text-lg mb-4">
-                  Maintenance: 380% In Project A And More In Egypt's Most Vital 
-                  Sectors, They Trusted Our Team To Build, Implement, And Utilize 
-                  The Asset Management System Successfully Deployed Across Egypt.
+                  Maintenance: 380% In Project A And More In Egypt's Most Vital
+                  Sectors, They Trusted Our Team To Build, Implement, And
+                  Utilize The Asset Management System Successfully Deployed
+                  Across Egypt.
                 </p>
               </div>
             </div>
@@ -282,7 +290,9 @@ export function MEDProjectPage() {
                 whileHover={{ y: -5 }}
               >
                 <Users className="w-12 h-12 text-blue-600 mx-auto mb-3" />
-                <div className="text-2xl font-bold text-slate-900 mb-1">380+</div>
+                <div className="text-2xl font-bold text-slate-900 mb-1">
+                  380+
+                </div>
                 <div className="text-sm text-slate-600">Maintenance Staff</div>
               </M.div>
               <M.div
@@ -290,7 +300,9 @@ export function MEDProjectPage() {
                 whileHover={{ y: -5 }}
               >
                 <CheckCircle2 className="w-12 h-12 text-green-600 mx-auto mb-3" />
-                <div className="text-2xl font-bold text-slate-900 mb-1">100%</div>
+                <div className="text-2xl font-bold text-slate-900 mb-1">
+                  100%
+                </div>
                 <div className="text-sm text-slate-600">Project Success</div>
               </M.div>
             </div>
@@ -301,24 +313,23 @@ export function MEDProjectPage() {
       {/* The Result Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">
-            The Result
-          </h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">The Result</h2>
           <div className="prose max-w-none text-slate-600">
             <p className="text-lg mb-6">
-              100% Successfully Delivered The MED System: A Comprehensive Asset 
-              Management And Maintenance System For Egypt's Critical Water 
-              Infrastructure. Delivering Innovative Decisions To 400 Excess 
-              Efficiency, By Integrating Predictive Maintenance, They Track Thousands 
-              Of Assets, Assets, Organizations, Organizations, Across 150 
-              Departments Faster, More Responsive, And More Scalable, Easily To 
-              Hundreds Of Users Nationwide.
+              100% Successfully Delivered The MED System: A Comprehensive Asset
+              Management And Maintenance System For Egypt's Critical Water
+              Infrastructure. Delivering Innovative Decisions To 400 Excess
+              Efficiency, By Integrating Predictive Maintenance, They Track
+              Thousands Of Assets, Assets, Organizations, Organizations, Across
+              150 Departments Faster, More Responsive, And More Scalable, Easily
+              To Hundreds Of Users Nationwide.
             </p>
             <p className="text-lg mb-6">
-              Understand Tools, With A User-Friendly Interface And Seamless Data 
-              Access Enable The System Reduces Downtime, Maintenance Costs, And 
-              Enhances Asset Lifespan. The MED System Features Greater Reliability, 
-              Cost Effectiveness, And Long-Term Sustainability For Asset Management.
+              Understand Tools, With A User-Friendly Interface And Seamless Data
+              Access Enable The System Reduces Downtime, Maintenance Costs, And
+              Enhances Asset Lifespan. The MED System Features Greater
+              Reliability, Cost Effectiveness, And Long-Term Sustainability For
+              Asset Management.
             </p>
           </div>
         </div>

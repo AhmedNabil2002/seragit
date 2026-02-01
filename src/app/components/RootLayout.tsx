@@ -2,7 +2,8 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 
 import { Code2, Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "../../assets/images/SERAGIT.png";
+
+
 export function RootLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -30,7 +31,7 @@ export function RootLayout() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
-              <img src={logo} alt="SeraGit logo" className="w-50 h-16 " />
+              <span className="text-lg font-bold text-blue-500 mb-3">SeraGit</span>
               {/* <span className="text-xl font-bold text-[#32c2d4] mb-3"
 
 >SeraGit</span> */}
@@ -116,8 +117,8 @@ export function RootLayout() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src={logo} alt="SeraGit logo" className="w-20 h-20" />
-                <span className="text-lg font-bold text-[#32c2d4] mb-3">SeraGit</span>
+
+                <span className="text-lg font-bold text-blue-500 mb-3">SeraGit</span>
               </div>
               <p className="text-slate-400 text-sm">
                 Building innovative software solutions for tomorrow's
